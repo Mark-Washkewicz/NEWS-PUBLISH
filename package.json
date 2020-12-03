@@ -2,10 +2,10 @@
   "name": "rlbf",
   "version": "1.0.0",
   "description": "",
-  "main": "main.js",
+  "main": "index.js",
   "scripts": {
     "build": "cross-env NODE_ENV=production webpack",
-    "start": "electron .",
+    "start": "cross-env NODE_ENV=production node server/server.js",
     "dev": "concurrently \"cross-env NODE_ENV=development webpack serve\" \"nodemon server/server.js\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
